@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/bg_custom_dialog_h14" android:layout_width="312dp" android:layout_height="314dp" android:layout_centerInParent="true">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="51dp" android:layout_height="40dp" android:layout_marginTop="32dp" android:src="@drawable/wifi_signal_failed"/>
+    <TextView android:textSize="14sp" android:textColor="#222222" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="32dp" android:text="@string/dialog_network_connection_failed"/>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <TextView android:textSize="14sp" android:textColor="#222222" android:gravity="center" android:id="@+id/tv_connect" android:layout_width="match_parent" android:layout_height="45dp" android:text="@string/dialog_connect"/>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <TextView android:textSize="14sp" android:textColor="#222222" android:gravity="center" android:id="@+id/tv_help" android:layout_width="match_parent" android:layout_height="45dp" android:text="@string/dialog_help"/>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <TextView android:textSize="14sp" android:textColor="#222222" android:gravity="center" android:id="@+id/tv_forget" android:layout_width="match_parent" android:layout_height="45dp" android:text="@string/dialog_cancel_save"/>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <TextView android:textSize="14sp" android:textColor="#222222" android:gravity="center" android:id="@+id/tv_cancel" android:layout_width="match_parent" android:layout_height="45dp" android:text="@string/dialog_known"/>
+</LinearLayout>

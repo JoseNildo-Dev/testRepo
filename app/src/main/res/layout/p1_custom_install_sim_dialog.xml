@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/bg_custom_dialog" android:layout_width="312dp" android:layout_height="280dp" android:layout_centerInParent="true">
+        <RelativeLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_above="@+id/custom_sim_img">
+            <TextView android:textSize="14sp" android:textColor="#666666" android:ellipsize="end" android:gravity="center" android:id="@+id/custom_sim_tv" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/dialog_install_sim_card" android:maxLines="2" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/custom_sim_img" android:layout_width="163dp" android:layout_height="137dp" android:layout_marginTop="16dp" android:layout_marginBottom="5dp" android:src="@drawable/p1_sim_install" android:scaleType="fitXY" android:layout_above="@+id/custom_bottom" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/custom_bottom" android:layout_width="match_parent" android:layout_height="45dp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="13sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/custom_installed" android:paddingLeft="15dp" android:paddingTop="3dp" android:paddingRight="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/dialog_cancel" android:maxLines="2" android:layout_weight="1" android:lineSpacingExtra="4dp"/>
+            <View android:background="#dcdcdc" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="13sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/custom_sure" android:paddingLeft="15dp" android:paddingTop="3dp" android:paddingRight="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/dialog_retry" android:maxLines="2" android:layout_weight="1" android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+        <View android:background="#dcdcdc" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_above="@+id/custom_bottom"/>
+    </RelativeLayout>
+</RelativeLayout>

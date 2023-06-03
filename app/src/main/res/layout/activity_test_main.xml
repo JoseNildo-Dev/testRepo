@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/btn1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/send_attacked_broadcast"/>
+    <Button android:id="@+id/btn2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/send_change_mode_broadcast"/>
+    <Button android:id="@+id/btn3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/send_password_setting_broadcast"/>
+    <Button android:id="@+id/btn4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/get_device_model"/>
+    <Button android:id="@+id/btn5" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/get_sn_number"/>
+    <Button android:id="@+id/btn6" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/get_security_status"/>
+    <Button android:id="@+id/btn7" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/is_debug_machine"/>
+    <Button android:id="@+id/btn8" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/request_authorization_code"/>
+    <Button android:id="@+id/btn9" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/confirm_authorization_code_status"/>
+</LinearLayout>

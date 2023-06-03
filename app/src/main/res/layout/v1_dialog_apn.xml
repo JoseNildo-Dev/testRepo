@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="310dp" android:layout_height="393dp" android:layout_centerInParent="true">
+    <TextView android:textSize="12sp" android:textColor="@color/C999999" android:gravity="center" android:id="@+id/tv_apn_title" android:background="@drawable/dialog_apn_top" android:layout_width="match_parent" android:layout_height="32dp" android:text="@string/apn_set_title"/>
+    <View android:id="@+id/line_view" android:background="#ececec" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@+id/tv_apn_title"/>
+    <ScrollView android:background="#ffffff" android:paddingRight="16dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/ll_bottom" android:layout_below="@+id/tv_apn_title" android:paddingStart="16dp" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/C222222" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:text="@string/apn_content"/>
+            <EditText android:id="@+id/edit_apn_name" android:layout_width="match_parent" android:hint="@string/apn_name" style="@style/EditTextStyle"/>
+            <EditText android:id="@+id/edit_apn" android:layout_width="match_parent" android:layout_marginTop="12dp" android:hint="@string/apn" style="@style/EditTextStyle"/>
+            <EditText android:id="@+id/edit_apn_type" android:layout_width="match_parent" android:layout_marginTop="12dp" android:hint="@string/apn_type" style="@style/EditTextStyle"/>
+            <EditText android:id="@+id/edit_apn_username" android:layout_width="match_parent" android:layout_marginTop="12dp" android:hint="@string/apn_username" style="@style/EditTextStyle"/>
+            <EditText android:id="@+id/edit_apn_proxy" android:layout_width="match_parent" android:layout_marginTop="12dp" android:hint="@string/apn_proxy" style="@style/EditTextStyle"/>
+            <EditText android:id="@+id/edit_apn_port" android:layout_width="match_parent" android:layout_marginTop="12dp" android:hint="@string/apn_port" style="@style/EditTextStyle"/>
+            <EditText android:id="@+id/edit_apn_password" android:layout_width="match_parent" android:layout_marginTop="12dp" android:hint="@string/apn_password" style="@style/EditTextStyle"/>
+            <EditText android:id="@+id/edit_apn_server" android:layout_width="match_parent" android:layout_marginTop="12dp" android:hint="@string/apn_server" style="@style/EditTextStyle"/>
+            <EditText android:id="@+id/edit_apn_mmsc" android:layout_width="match_parent" android:layout_marginTop="12dp" android:hint="@string/apn_mmsc" style="@style/EditTextStyle"/>
+            <EditText android:id="@+id/edit_apn_mms_proxy" android:layout_width="match_parent" android:layout_marginTop="12dp" android:hint="@string/apn_mms_proxy" style="@style/EditTextStyle"/>
+            <EditText android:id="@+id/edit_apn_mms_port" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginTop="12dp" android:hint="@string/apn_mms_port" style="@style/EditTextStyle"/>
+            <EditText android:id="@+id/edit_apn_mcc" android:layout_width="match_parent" android:layout_marginTop="12dp" android:hint="@string/apn_mcc" style="@style/EditTextStyle"/>
+            <EditText android:id="@+id/edit_apn_mnc" android:layout_width="match_parent" android:layout_marginTop="12dp" android:hint="@string/apn_mnc" style="@style/EditTextStyle"/>
+            <EditText android:id="@+id/edit_apn_authentication_type" android:layout_width="match_parent" android:layout_marginTop="12dp" android:hint="@string/apn_authentication_type" style="@style/EditTextStyle"/>
+            <EditText android:id="@+id/edit_apn_protocol" android:layout_width="match_parent" android:layout_marginTop="12dp" android:hint="@string/apn_protocol" style="@style/EditTextStyle"/>
+            <EditText android:id="@+id/edit_apn_roaming_protocol" android:layout_width="match_parent" android:layout_marginTop="12dp" android:hint="@string/apn_roaming_protocol" style="@style/EditTextStyle"/>
+            <EditText android:id="@+id/edit_apn_bearer" android:layout_width="match_parent" android:layout_marginTop="12dp" android:layout_marginBottom="16dp" android:hint="@string/apn_bearer" style="@style/EditTextStyle"/>
+        </LinearLayout>
+    </ScrollView>
+    <View android:layout_gravity="center_horizontal" android:background="#dedede" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_above="@+id/ll_bottom"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_bottom" android:background="@drawable/shape_dialog_bottom" android:layout_width="match_parent" android:layout_height="45dp" android:weightSum="2" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14sp" android:textColor="@color/C222222" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_cancel" android:background="@drawable/ripple_bg_left_bottom" android:paddingLeft="15dp" android:paddingTop="0dp" android:paddingRight="15dp" android:paddingBottom="0dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/dialog_cancel" android:maxLines="2" android:layout_weight="1"/>
+        <View android:id="@+id/line2" android:background="@color/DEDEDE" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="14sp" android:textColor="@color/C222222" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_retry" android:background="@drawable/ripple_bg_right_bottom" android:paddingLeft="15dp" android:paddingTop="0dp" android:paddingRight="15dp" android:paddingBottom="0dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/apn_retry" android:maxLines="2" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

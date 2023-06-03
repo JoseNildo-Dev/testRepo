@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/line1" android:background="@color/DEDEDE" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@+id/content"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="53.3dp" android:weightSum="2" android:layout_below="@+id/line1">
+        <TextView android:textSize="18.6sp" android:textColor="@color/C222222" android:ellipsize="end" android:gravity="center" android:id="@+id/left" android:background="@drawable/ripple_bg_left_bottom_t1" android:paddingLeft="15dp" android:paddingTop="0dp" android:paddingRight="15dp" android:paddingBottom="0dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="leftleftleftleftleftleft" android:maxLines="2" android:layout_weight="1"/>
+        <View android:id="@+id/line2" android:background="@color/DEDEDE" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="18.6sp" android:textColor="@color/C222222" android:ellipsize="end" android:gravity="center" android:id="@+id/right" android:background="@drawable/ripple_bg_right_bottom_t1" android:paddingLeft="15dp" android:paddingTop="0dp" android:paddingRight="15dp" android:paddingBottom="0dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="rightrightrightrightright" android:maxLines="2" android:layout_weight="1"/>
+    </LinearLayout>
+</merge>

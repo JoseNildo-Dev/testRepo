@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/bg_custom_dialog_h14" android:layout_width="310dp" android:layout_height="194dp" android:layout_centerInParent="true">
+        <TextView android:textSize="18sp" android:textColor="#666666" android:id="@+id/wifi_ssid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_marginBottom="24dp" android:text="SUNMI" android:layout_centerHorizontal="true"/>
+        <RelativeLayout android:layout_width="246dp" android:layout_height="wrap_content" android:layout_marginBottom="32dp" android:layout_above="@+id/custom_bottom" android:layout_centerHorizontal="true">
+            <EditText android:textSize="14sp" android:textColor="#222222" android:textColorHint="#cccccc" android:gravity="center_vertical" android:id="@+id/wifi_pwd_et" android:background="@drawable/custom_edit_pwd" android:paddingLeft="5dp" android:paddingTop="5dp" android:paddingRight="20dp" android:paddingBottom="5dp" android:layout_width="246dp" android:layout_height="wrap_content" android:hint="@string/dialog_password_input" android:maxLines="1" android:maxLength="60" android:layout_centerVertical="true" android:inputType="textPassword" android:textCursorDrawable="@drawable/custom_cursor_h14"/>
+            <RelativeLayout android:id="@+id/rel_show" android:layout_width="40dp" android:layout_height="40dp" android:layout_alignParentRight="true">
+                <ImageView android:id="@+id/iv_password_visible" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_eye_close" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/custom_bottom" android:layout_width="match_parent" android:layout_height="45dp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="14sp" android:textColor="#222222" android:gravity="center" android:id="@+id/tv_cancel" android:background="@drawable/btn_left_selector" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/dialog_cancel" android:layout_weight="1" android:layout_centerInParent="true"/>
+            <View android:background="#dcdcdc" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="14sp" android:textColor="#cccccc" android:gravity="center" android:id="@+id/tv_connect" android:background="@drawable/btn_right_selector" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/dialog_connect" android:layout_weight="1" android:layout_centerInParent="true"/>
+        </LinearLayout>
+        <View android:background="#dcdcdc" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_above="@+id/custom_bottom"/>
+    </RelativeLayout>
+</RelativeLayout>

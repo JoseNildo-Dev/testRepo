@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/bg" android:background="@drawable/ripple_bg_item" android:layout_width="match_parent" android:layout_height="54dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="19dp" android:layout_alignParentStart="true">
+        <TextView android:textSize="14sp" android:textColor="@color/C222222" android:id="@+id/text_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上音量键"/>
+        <TextView android:textSize="14sp" android:textColor="@color/C999999" android:id="@+id/text_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="无"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/enter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="19dp" android:src="@drawable/enter" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:background="#eeeeee" android:layout_width="wrap_content" android:layout_height="0.5dp" android:layout_marginLeft="19dp" android:layout_marginRight="19dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/bg_custom_dialog_h14" android:layout_width="284dp" android:layout_height="100dp" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="59dp">
+            <TextView android:textSize="14sp" android:textColor="@color/black" android:id="@+id/tv_wifi_ssid_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/custom_bottom" android:layout_width="match_parent" android:layout_height="41dp" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@+id/rl_cancel" android:background="@drawable/btn_left_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="13sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_cancel" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <View android:background="#dcdcdc" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+            <RelativeLayout android:id="@+id/rl_cancel_save" android:background="@drawable/btn_right_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="13sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_cancel_save" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="#dcdcdc" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_above="@+id/custom_bottom"/>
+    </RelativeLayout>
+</RelativeLayout>

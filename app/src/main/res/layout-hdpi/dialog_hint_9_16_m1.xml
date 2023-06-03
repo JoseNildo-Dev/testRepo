@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/dialog_bg" android:layout_width="280dp" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/img" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="32dp" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="14sp" android:textColor="#222222" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginTop="16dp" android:layout_marginRight="32dp" android:layout_marginBottom="32dp" android:text="我是中文我是中文我是中文我是中文我是中文我是中文我是中文我是中文" android:layout_below="@+id/img" android:layout_centerHorizontal="true" android:lineSpacingExtra="2dp"/>
+    <include layout="@layout/dialog_bottom_9_16"/>
+</RelativeLayout>

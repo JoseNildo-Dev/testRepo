@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="106" android:versionName="v2.0.51" package="com.sunmi.sunmisecurityservice_v3">
+    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="25"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.SHUTDOWN"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.MASTER_CLEAR"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.REORDER_TAhuiSKS"/>
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SET_PREFERRED_APPLICATIONS"/>
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.sunmi.perm.MSR"/>
+    <uses-permission android:name="com.sunmi.perm.ICC"/>
+    <uses-permission android:name="com.sunmi.perm.CONTACTLESS_CARD"/>
+    <uses-permission android:name="com.sunmi.perm.PINPAD"/>
+    <uses-permission android:name="com.sunmi.perm.SECURITY"/>
+    <uses-permission android:name="com.sunmi.perm.LED"/>
+    <uses-permission android:name="com.sunmi.baseservice.RECEIVE_SUNMI_PUSH"/>
+    <meta-data android:name="android.support.VERSION" android:value="26.0.0-alpha1"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="android.permission.GRANT_RUNTIME_PERMISSIONS"/>
+    <uses-permission android:name="android.permission.REVOKE_RUNTIME_PERMISSIONS"/>
+    <uses-permission android:name="android.permission.INSTALL_GRANT_RUNTIME_PERMISSIONS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.READ_INSTALL_SESSIONS"/>
+    <uses-permission android:name="android.permission.UPDATE_APP_OPS_STATS"/>
+    <uses-permission android:name="android.permission.KILL_UID"/>
+    <application android:theme="@style/AppTheme" android:label="@string/this_app_name" android:icon="@mipmap/ic_launcher" android:name="com.sunmi.sunmisecurityservice.app.MyApplication" android:manageSpaceActivity="com.sunmi.sunmisecurityservice.ManageSpaceActivity" android:allowBackup="true" android:supportsRtl="true" android:networkSecurityConfig="@xml/network_security_config">
+        <activity android:name="com.sunmi.sunmisecurityservice.ManageSpaceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.sunmi.sunmisecurityservice.view.TradModeActivity" android:excludeFromRecents="true"/>
+        <activity android:name="com.sunmi.sunmisecurityservice.view.DisplayAttackedActivity" android:excludeFromRecents="true"/>
+        <activity android:name="com.sunmi.sunmisecurityservice.view.SNChangeActivity" android:excludeFromRecents="true"/>
+        <activity android:name="com.sunmi.sunmisecurityservice.wifi.WifiFailedHelpActivity" android:excludeFromRecents="true"/>
+        <service android:name="com.sunmi.sunmisecurityservice.service.DispatchWorkService"/>
+        <receiver android:name="com.sunmi.sunmisecurityservice.broadcast.SecurityBroadcastReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.sunmi.secureattacked.ACTION_SECURE_ATTACKED"/>
+                <action android:name="com.sunmi.sunmisecurityservice_v3"/>
+                <action android:name="sun.mi.store.ACTION_DEFAULT_START_LAUNCHER_SET_SUCCESS"/>
+                <action android:name="com.sunmi.reboot"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.sunmi.sunmisecurityservice_v3.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <service android:name="com.sunmi.upgrade.UpgradeService"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+    </application>
+</manifest>
